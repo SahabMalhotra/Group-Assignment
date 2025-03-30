@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-//useState is a React hook that allows you to add state to functional components
-//Manage different state variables
+// useState is a React hook that allows you to add state to functional components
+// Manage different state variables
 
 import axios from "axios";
 // axios is used to make API requests to the OMDb API
@@ -23,18 +23,18 @@ function MovieSearchApp() {
         .get(
           `https://www.omdbapi.com/?s=${searchTerm}&apikey=9c2c87ac&type=movie`
         )
-        //Executed when response is received from the API
-        //The API key is hardcoded here, but in a real application, it should be stored securely
+        // Executed when response is received from the API
+        // The API key is hardcoded here, but in a real application, it should be stored securely
         .then((response) => {
           const searchResults = response.data.Search || [];
-//Sends a request to the OMDb API with the search term and API key
-//The response is expected to contain a list of movies matching the search term
+// Sends a request to the OMDb API with the search term and API key
+// The response is expected to contain a list of movies matching the search term
 // If no movies are found, an empty array is returned
           // Fetch detailed info for each movie
           Promise.all(
             searchResults.map((movie) =>
-                //Loops through the search results and fetches detailed information for each movie using its IMDb ID
-              //The detailed information is fetched using another API call to the OMDb API
+                // Loops through the search results and fetches detailed information for each movie using its IMDb ID
+              // The detailed information is fetched using another API call to the OMDb API
               axios
                 .get(
                   `https://www.omdbapi.com/?i=${movie.imdbID}&apikey=9c2c87ac`
