@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// Import React for building user interfaces
+// Importing necessary libraries and components
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// Importing React Router for routing
+// BrowserRouter (renamed Router): Wraps the entire app to enable navigation.
+// Routes: Contains multiple Route elements.
+// Route: Defines different paths (/, /movie/:imdbID).
+import "./App.css";
+// CSS (App.css): For styling.
+import MovieSearchApp from "./MovieSearchApp";
+import MovieDetails from "./MovieDetails";
+// MovieSearchApp (Search Page) & MovieDetails (Movie Info Page) are imported.
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {/* Router wraps the entire app to enable routing */}
+      <Routes>
+        {/* Routes contains multiple Route elements */}
+        <Route path="/" element={<MovieSearchApp />} />
+        {/* Route for the search page */}
+        {/* The path "/" corresponds to the root URL */}
+        <Route path="/movie/:imdbID" element={<MovieDetails />} />
+        {/* Route for the movie info page */}
+      </Routes>
+    </Router>
   );
 }
 
