@@ -1,4 +1,4 @@
-Movie Search App
+#**Movie Search App**
 
 Team REACT
 
