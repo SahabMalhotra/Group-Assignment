@@ -174,21 +174,75 @@ p {
   height: auto;
 }
 
-@media screen and (max-width: 480px) {
-  .movie-list {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    margin-top: 30px;
   }
+  
   .search-container {
     flex-direction: column;
-    width: 80%;
+    width: 90%;
+    padding: 10px;
+    border-radius: 30px;
   }
 
   .search-container input {
     width: 100%;
     margin-right: 0;
+    margin-bottom: 10px;
   }
 
   .search-container button {
     width: 100%;
+  }
+
+  .movie-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .movie-card {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .movie-card .movie-info {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .movie-card .movie-info h2 {
+    font-size: 22px;
+  }
+
+  .movie-card .movie-info p {
+    font-size: 18px;
+  }
+
+  .movie-details h2 {
+    font-size: 28px;
+  }
+
+  .movie-details p {
+    font-size: 18px;
+  }
+
+  .back {
+    width: 80%;
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+
+  .detail-image img {
+    width: 90%;
   }
 }
