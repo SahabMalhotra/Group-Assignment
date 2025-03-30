@@ -10,7 +10,7 @@ Manpreet Singh: 200562544
 
 Sahib Singh: 200564714
 
-**Course Details**
+## **Course Details**
 
 Course: COMP2068-25W-21348 - JavaScript Frameworks - 01
 
@@ -18,7 +18,7 @@ Instructor: Jesus Eduardo Jaime Gandarilla
 
 Date: March 30, 2025
 
-**Project Overview**
+## **Project Overview**
 
 The Movie Search App is a React-based application that allows users to search for movies using the OMDb API. It provides an interactive UI where users can enter a movie title, view search results, and get detailed information on selected movies.
 
@@ -32,11 +32,11 @@ Features
 
 - Responsive UI: Styled using CSS to ensure a user-friendly experience.
 
-**API Reference**
+## **API Reference**
 
 [OMDb API](https://www.omdbapi.com/) used for fetching movie data.
 
-**Useful VS Code Extensions**
+## **Useful VS Code Extensions**
 
 1. ES7+ React/Redux/React-Native Snippets - Quick React boilerplate shortcuts.
 
