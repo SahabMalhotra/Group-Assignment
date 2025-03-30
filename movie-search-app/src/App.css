@@ -124,12 +124,6 @@ p {
   color: purple;
 }
 
-@media (max-width: 768px) {
-  .movie-list {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Movie Details Page */
 .back {
   position: relative;
@@ -178,4 +172,23 @@ p {
   border-radius: 20px;
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .movie-list {
+    grid-template-columns: 1fr;
+  }
+  .search-container {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .search-container input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .search-container button {
+    width: 100%;
+  }
 }
