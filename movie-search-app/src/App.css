@@ -188,36 +188,38 @@ p {
   }
 
   .search-container input {
-    width: 100%;
+    width: 90%;
     margin-right: 0;
     margin-bottom: 10px;
   }
 
   .search-container button {
-    width: 100%;
+    width: 80%;
   }
 
   .movie-list {
     grid-template-columns: 1fr;
     gap: 15px;
-    padding: 0 10px;
+    width:100%;
+    margin: 0 auto;
   }
 
   .movie-card {
     flex-direction: column;
     height: auto;
-    width: 100%;
+    width: 70%;
     padding: 10px;
   }
 
   .movie-card img {
-    width: 100%;
-    height: auto;
+    width: 70%;
+    height: 60%;
   }
 
   .movie-card .movie-info {
-    width: 100%;
+    width: 80%;
     padding: 15px;
+    height: 50%;
   }
 
   .movie-card .movie-info h2 {
