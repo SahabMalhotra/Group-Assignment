@@ -1,4 +1,4 @@
-**Movie Search App**
+# **Movie Search App**
 
 **Team REACT**
 
@@ -34,8 +34,7 @@ Features
 
 **API Reference**
 
-OMDb API used for fetching movie data.
-https://www.omdbapi.com/
+[OMDb API](https://www.omdbapi.com/) used for fetching movie data.
 
 **Useful VS Code Extensions**
 
