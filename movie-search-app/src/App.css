@@ -144,7 +144,8 @@ p {
   font-size: 20px;
   cursor: pointer;
   background-color: #007bff;
-  color: white;
+  color: pink;
+  font-weight: 900;
   border: none;
   margin-top: 10%;
   border-radius: 4px;
